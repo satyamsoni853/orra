@@ -119,22 +119,6 @@ const ProcessLab = () => {
         </div>
 
         {/* Verification Footer */}
-        <div className="mt-16 pt-8 border-t border-border/20 flex justify-between items-center opacity-40 hover:opacity-100 transition-opacity">
-          <span className="text-[10px] uppercase tracking-[0.2em] font-bold">
-            Global Standards
-          </span>
-          <div className="flex gap-4 md:gap-8 overflow-hidden">
-            <span className="text-[10px] md:text-xs font-bold font-mono">
-              GMP • CERTIFIED
-            </span>
-            <span className="text-[10px] md:text-xs font-bold font-mono">
-              FDA • COMPLIANT
-            </span>
-            <span className="text-[10px] md:text-xs font-bold font-mono">
-              ISO • 9001
-            </span>
-          </div>
-        </div>
       </div>
     </section>
   );
