@@ -89,13 +89,13 @@ const OurProducts = () => {
             <span className="text-accent font-bold tracking-[0.4em] uppercase text-[10px] md:text-sm mb-4 block">
               The Sacred Apothecary
             </span>
-            <h2 className="text-4xl md:text-8xl font-black text-foreground leading-[0.9] tracking-tighter">
+            <h2 className="text-3xl md:text-6xl font-black text-foreground leading-[0.9] tracking-tighter">
               Ancient Wisdom{" "}
               <span className="text-primary italic font-serif font-normal lowe-case">
                 &
               </span>{" "}
               <br />
-              <span className="text-3xl md:text-7xl uppercase tracking-widest font-light text-foreground/80">
+              <span className="text-2xl md:text-5xl uppercase tracking-widest font-light text-foreground/80">
                 Modern Vitality
               </span>
             </h2>

@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <footer className="bg-card text-foreground border-t border-border py-20 px-6">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 mb-16">
-          <div className="col-span-1 sm:col-span-2 md:col-span-1">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 mb-16">
+          <div className="col-span-2 md:col-span-1">
             <Link
               href="/"
               className="text-2xl font-bold text-primary mb-6 block"
@@ -61,7 +61,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="sm:col-span-2 md:col-span-1">
+          <div className="col-span-2 md:col-span-1">
             <h4 className="font-semibold mb-6">Stay Healthy</h4>
             <p className="text-sm mb-4 opacity-70">
               Get health tips and exclusive offers.

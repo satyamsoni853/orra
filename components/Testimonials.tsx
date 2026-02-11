@@ -77,7 +77,7 @@ const Testimonials = () => {
           {scrollItems.map((t, i) => (
             <div
               key={i}
-              className="shrink-0 w-[400px] group relative bg-card/40 backdrop-blur-xl p-10 rounded-[3rem] border border-border/50 hover:border-primary/20 transition-all duration-500 hover:-translate-y-2 flex flex-col shadow-xl shadow-primary/5"
+              className="shrink-0 w-[300px] md:w-[400px] group relative bg-card/40 backdrop-blur-xl p-6 md:p-10 rounded-[2rem] md:rounded-[3rem] border border-border/50 hover:border-primary/20 transition-all duration-500 hover:-translate-y-2 flex flex-col shadow-xl shadow-primary/5"
             >
               <div className="flex gap-1 mb-6">
                 {[...Array(5)].map((_, index) => (

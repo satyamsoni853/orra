@@ -118,7 +118,7 @@ const CustomerReview = () => {
             ))}
 
             {/* Background Polish Element */}
-            <div className="absolute -z-10 -bottom-10 -right-10 text-[15rem] font-bold text-primary/5 select-none pointer-events-none leading-none">
+            <div className="absolute -z-10 -bottom-10 -right-10 text-[8rem] md:text-[15rem] font-bold text-primary/5 select-none pointer-events-none leading-none">
               PURE
             </div>
           </div>

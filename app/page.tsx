@@ -6,6 +6,7 @@ import WhyTrust from "@/components/WhyTrust";
 import Testimonials from "@/components/Testimonials";
 import FAQSection from "@/components/FAQSection";
 import CustomerReview from "@/components/CustomerReview";
+import ProcessLab from "@/components/ProcessLab";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <WhyTrust />
         <OurProducts />
 
+        <ProcessLab />
         <Testimonials />
         <VerifiedBy />
         <FAQSection />

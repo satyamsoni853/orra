@@ -60,7 +60,6 @@ const reasons = [
       </svg>
     ),
   },
-  
 ];
 
 const WhyTrust = () => {
@@ -90,16 +89,20 @@ const WhyTrust = () => {
               science.
             </p>
 
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div className="p-6 rounded-3xl bg-card border border-border shadow-xl shadow-primary/5 hover:-translate-y-1 transition-all">
-                <p className="text-3xl font-bold text-primary mb-1">98%</p>
-                <p className="text-[10px] font-bold text-foreground/40 uppercase tracking-widest leading-loose">
+            <div className="flex flex-row gap-4">
+              <div className="flex-1 p-4 md:p-6 rounded-3xl bg-card border border-border shadow-xl shadow-primary/5 hover:-translate-y-1 transition-all">
+                <p className="text-2xl md:text-3xl font-bold text-primary mb-1">
+                  98%
+                </p>
+                <p className="text-[8px] md:text-[10px] font-bold text-foreground/40 uppercase tracking-widest leading-loose">
                   Customer Longevity
                 </p>
               </div>
-              <div className="p-6 rounded-3xl bg-card border border-border shadow-xl shadow-primary/5 hover:-translate-y-1 transition-all">
-                <p className="text-3xl font-bold text-accent mb-1">15k+</p>
-                <p className="text-[10px] font-bold text-foreground/40 uppercase tracking-widest leading-loose">
+              <div className="flex-1 p-4 md:p-6 rounded-3xl bg-card border border-border shadow-xl shadow-primary/5 hover:-translate-y-1 transition-all">
+                <p className="text-2xl md:text-3xl font-bold text-accent mb-1">
+                  15k+
+                </p>
+                <p className="text-[8px] md:text-[10px] font-bold text-foreground/40 uppercase tracking-widest leading-loose">
                   Healing Journeys
                 </p>
               </div>

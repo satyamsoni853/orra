@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 const VerifiedBy = () => {
@@ -37,29 +39,43 @@ const VerifiedBy = () => {
           </h2>
         </div>
 
-        {/* Logos Pod moved to BOTTOM of the text */}
-        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-20 px-4 md:px-8 py-8 md:py-10 rounded-4xl md:rounded-[3rem] border border-border/50 bg-card/30 backdrop-blur-xl shadow-2xl shadow-primary/5">
-          {partners.map((partner, index) => (
-            <div
-              key={index}
-              className="group relative flex flex-col items-center justify-center"
-            >
-              <div className="w-24 md:w-40 h-12 md:h-20 flex items-center justify-center transition-all duration-500">
-                <img
-                  src={partner.src}
-                  alt={partner.name}
-                  className="max-w-full max-h-full object-contain filter saturate-[1.2]"
-                />
+        {/* Infinite Scroll Logos */}
+        <div className="relative flex overflow-hidden py-4 md:py-8">
+          <div className="flex animate-infinite-scroll gap-12 md:gap-24 min-w-full items-center">
+            {[...partners, ...partners, ...partners].map((partner, index) => (
+              <div
+                key={index}
+                className="group relative shrink-0 flex flex-col items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-500"
+              >
+                <div className="w-24 md:w-32 h-12 md:h-16 flex items-center justify-center">
+                  <img
+                    src={partner.src}
+                    alt={partner.name}
+                    className="max-w-full max-h-full object-contain filter saturate-0 hover:saturate-100 transition-all duration-500"
+                  />
+                </div>
               </div>
-              <span className="absolute -bottom-4 text-[8px] font-bold text-primary opacity-0 group-hover:opacity-100 transition-opacity tracking-widest uppercase">
-                {partner.name}
-              </span>
-            </div>
-          ))}
+            ))}
+          </div>
+          {/* Gradient Overlays */}
+          <div className="absolute top-0 left-0 w-20 h-full bg-linear-to-r from-background to-transparent z-10 pointer-events-none" />
+          <div className="absolute top-0 right-0 w-20 h-full bg-linear-to-l from-background to-transparent z-10 pointer-events-none" />
         </div>
-
-        {/* Subtle verification footer */}
       </div>
+
+      <style jsx>{`
+        @keyframes infinite-scroll {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-50%);
+          }
+        }
+        .animate-infinite-scroll {
+          animation: infinite-scroll 30s linear infinite;
+        }
+      `}</style>
     </section>
   );
 };
