@@ -9,7 +9,7 @@ const products = [
     title: "Vitaora King Ashwagandha",
     description:
       "The root of balance. Full-spectrum extract for stress relief and cognitive support.",
-    price: "$32.50",
+    price: "₹382.50",
     category: "Supplements",
     img: "/Products/vitora.avif",
     details:
@@ -20,7 +20,7 @@ const products = [
     title: "Vitaora",
     description:
       "Our signature wellness blend for daily vitality and holistic health balance.",
-    price: "$29.99",
+    price: "₹289.99",
     category: "Vitality",
     img: "/Products/vitora.avif",
     details:
@@ -31,7 +31,7 @@ const products = [
     title: "Long Lasting",
     description:
       "Enhanced formula for sustained energy levels and physical endurance.",
-    price: "$38.00",
+    price: "₹388.00",
     category: "Vitality",
     img: "/current/1.avif",
     details:
@@ -42,7 +42,7 @@ const products = [
     title: "Vitaora Oil",
     description:
       "Therapeutic herbal oil for soothing relief and deep muscle nourishment.",
-    price: "$24.99",
+    price: "₹284.99",
     category: "Healing Oils",
     img: "/Products/spray.avif",
     details:
@@ -53,7 +53,7 @@ const products = [
     title: "Serum",
     description:
       "Concentrated botanical serum for skin rejuvenation and natural radiance.",
-    price: "$45.00",
+    price: "₹845.00",
     category: "Skincare",
     img: "/Products/faceserium.avif",
     details:
@@ -64,7 +64,7 @@ const products = [
     title: "Spray",
     description:
       "Refreshing herbal mist for instant revitalization and protection.",
-    price: "$19.99",
+    price: "₹1879.99",
     category: "Apothecary",
     img: "/Products/spray.avif",
     details:
@@ -75,7 +75,7 @@ const products = [
     title: "Knee Relief Pain Oil",
     description:
       "Ayurvedic blend for fast-acting joint and muscle comfort. 100% natural.",
-    price: "$24.99",
+    price: "₹244.99",
     category: "Healing Oils",
     img: "/Products/spray.avif",
     details:
@@ -86,7 +86,7 @@ const products = [
     title: "Orra Pure Shilajeet",
     description:
       "Himalayan gold-grade resin for peak vitality and spiritual clarity.",
-    price: "$49.99",
+    price: "₹449.99",
     category: "Vitality",
     img: "/Products/vitora.avif",
     details:
@@ -95,7 +95,7 @@ const products = [
 ];
 
 const OurProducts = () => {
-  const { addToCart } = useCart();
+  const { addToCart, cart, decrementQuantity } = useCart();
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
   const [visibleCount, setVisibleCount] = useState(6);
 
@@ -155,22 +155,10 @@ const OurProducts = () => {
                   </h3>
                   <button
                     onClick={() => setSelectedProduct(product)}
-                    className="p-1 rounded-full hover:bg-primary/10 text-primary/40 hover:text-primary transition-colors"
+                    className="px-3 py-1 rounded-full border border-primary/20 text-[10px] font-bold text-primary uppercase tracking-widest hover:bg-primary hover:text-white transition-all"
                     title="View Details"
                   >
-                    <svg
-                      className="w-5 h-5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
+                    Details
                   </button>
                 </div>
                 <p className="text-sm opacity-60 mb-6 line-clamp-2 leading-relaxed text-foreground">
@@ -189,18 +177,44 @@ const OurProducts = () => {
                       Details
                     </button>
                   </div>
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      addToCart(product);
-                    }}
-                    className="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-2xl font-bold text-xs uppercase tracking-widest hover:bg-primary/90 transition-all active:scale-95 group/btn"
-                  >
-                    Add
-                    <span className="transition-transform group-hover/btn:translate-y-[-2px]">
-                      +
-                    </span>
-                  </button>
+                  {cart.find((item) => item.id === product.id)?.quantity ? (
+                    <div className="flex items-center gap-3 bg-primary text-white px-4 py-3 rounded-2xl font-bold text-xs uppercase tracking-widest">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          decrementQuantity(product.id);
+                        }}
+                        className="px-2 hover:opacity-80 transition-opacity text-sm"
+                      >
+                        -
+                      </button>
+                      <span className="w-4 text-center">
+                        {cart.find((item) => item.id === product.id)?.quantity}
+                      </span>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          addToCart(product);
+                        }}
+                        className="px-2 hover:opacity-80 transition-opacity text-sm"
+                      >
+                        +
+                      </button>
+                    </div>
+                  ) : (
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        addToCart(product);
+                      }}
+                      className="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-2xl font-bold text-xs uppercase tracking-widest hover:bg-primary/90 transition-all active:scale-95 group/btn"
+                    >
+                      Add
+                      <span className="transition-transform group-hover/btn:translate-y-[-2px]">
+                        +
+                      </span>
+                    </button>
+                  )}
                 </div>
               </div>
             </div>

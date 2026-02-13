@@ -82,13 +82,22 @@ const Footer = () => {
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
           <p>© 2024 Orra Healthy Cure. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="/" className="hover:text-primary transition-colors">
+            <Link
+              href="https://www.instagram.com/orraheathycure/"
+              className="hover:text-primary transition-colors"
+            >
               Instagram
             </Link>
-            <Link href="/" className="hover:text-primary transition-colors">
+            <Link
+              href="https://www.youtube.com/@orrahealthycure"
+              className="hover:text-primary transition-colors"
+            >
               YouTube
             </Link>
-            <Link href="/" className="hover:text-primary transition-colors">
+            <Link
+              href="https://www.facebook.com/p/Orra-Healthy-Cure-61578281830439/"
+              className="hover:text-primary transition-colors"
+            >
               Facebook
             </Link>
           </div>

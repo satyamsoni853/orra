@@ -12,14 +12,14 @@ const AccountPage = () => {
       id: "ORRA-8291",
       date: "Oct 12, 2026",
       status: "Delivered",
-      total: "$84.99",
+      total: "₹84.99",
       items: "Ashwagandha, Triphala",
     },
     {
       id: "ORRA-7102",
       date: "Sep 28, 2026",
       status: "In Transit",
-      total: "$125.00",
+      total: "₹125.00",
       items: "Eco-Jute Mat, Wellness Oil",
     },
   ];

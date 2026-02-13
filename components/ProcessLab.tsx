@@ -24,7 +24,7 @@ const steps = [
     title: "Clinical Integrity",
     tagline: "Sanctuary Lab",
     desc: "Tested for 180+ impurities. We ensure absolute safety without compromising spiritual potency.",
-    img: "https://images.unsplash.com/photo-1579154273007-44f056f53e6e?auto=format&fit=crop&q=80&w=800",
+    img: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFicCUyMHdpdGglMjBwbGFudHN8ZW58MHx8MHx8fDA%3D",
     stats: ["Zero Metals", "Non-GMO"],
   },
   {

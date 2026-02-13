@@ -21,7 +21,7 @@ const slides = [
     title: "King Ashwagandha",
     accent: "Vitaora Essential",
     desc: "The supreme restorative tonic. Balance your stress hormones and reclaim your daily vitality with 'Orra' wisdom.",
-    img: "https://images.unsplash.com/photo-1512290923902-8a9f81dc2069?auto=format&fit=crop&q=80&w=1920",
+    img: "https://images.unsplash.com/photo-1615485290382-441e4d04fcad?auto=format&fit=crop&q=80&w=1920",
     theme: "primary",
   },
   {

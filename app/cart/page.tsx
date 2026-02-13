@@ -10,7 +10,7 @@ const CartPage = () => {
   const { cart, removeFromCart, addToCart, cartCount } = useCart();
 
   const subtotal = cart.reduce((acc, item) => {
-    const price = parseFloat(item.price.replace("$", ""));
+    const price = parseFloat(item.price.replace("₹", ""));
     return acc + price * item.quantity;
   }, 0);
 
@@ -94,9 +94,9 @@ const CartPage = () => {
 
                     <div className="text-right hidden sm:block">
                       <p className="font-bold text-lg">
-                        $
+                        ₹
                         {(
-                          parseFloat(item.price.replace("$", "")) *
+                          parseFloat(item.price.replace("₹", "")) *
                           item.quantity
                         ).toFixed(2)}
                       </p>
@@ -115,7 +115,7 @@ const CartPage = () => {
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between text-sm">
                   <span className="opacity-60">Subtotal</span>
-                  <span className="font-bold">${subtotal.toFixed(2)}</span>
+                  <span className="font-bold">₹{subtotal.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="opacity-60">Shipping</span>
@@ -125,12 +125,12 @@ const CartPage = () => {
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="opacity-60">Vedic Tax</span>
-                  <span className="font-bold">$0.00</span>
+                  <span className="font-bold">₹0.00</span>
                 </div>
                 <div className="pt-4 border-t border-border flex justify-between items-end">
                   <span className="font-bold">Total</span>
                   <span className="text-3xl font-bold text-primary">
-                    ${subtotal.toFixed(2)}
+                    ₹{subtotal.toFixed(2)}
                   </span>
                 </div>
               </div>

@@ -63,7 +63,7 @@ const Navbar = () => {
           </span>
           <div className="flex items-center space-x-4">
             <Link
-              href="https://facebook.com"
+              href="https://www.facebook.com/p/Orra-Healthy-Cure-61578281830439/"
               className="w-8 h-8 flex items-center justify-center text-foreground/60 rounded-full"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -71,7 +71,7 @@ const Navbar = () => {
               </svg>
             </Link>
             <Link
-              href="https://instagram.com"
+              href="https://www.instagram.com/orraheathycure/"
               className="w-8 h-8 flex items-center justify-center text-foreground/60 rounded-full"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -79,7 +79,7 @@ const Navbar = () => {
               </svg>
             </Link>
             <Link
-              href="https://youtube.com"
+              href="https://www.youtube.com/@orrahealthycure"
               className="w-8 h-8 flex items-center justify-center text-foreground/60 rounded-full"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
