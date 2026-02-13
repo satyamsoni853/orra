@@ -18,28 +18,28 @@ const testimonials = [
     img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200",
   },
   {
-    name: "Michael Ross",
+    name: "Rohan Mehta",
     role: "Daily Wellness Seeker",
     content:
       "Applying the Ayurvedic oils has become my favorite evening ritual. My sleep quality has improved significantly.",
     img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
   },
   {
-    name: "Sienna Gupta",
+    name: "Sneha Gupta",
     role: "Meditation Guide",
     content:
       "The essence oils translate peace into a physical sensation. My studio atmosphere has been completely transformed.",
     img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200",
   },
   {
-    name: "James Wilson",
+    name: "Arjun Kapoor",
     role: "Athlete",
     content:
       "The Knee Relief oil is my post-training secret. Natural recovery that actually works faster than synthetic creams.",
     img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200",
   },
   {
-    name: "Elena Petrov",
+    name: "Meera Reddy",
     role: "Nutritionist",
     content:
       "Finding Shilajeet of this purity in a luxury format is rare. It has become a staple in my morning vitality routine.",

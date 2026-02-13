@@ -134,9 +134,12 @@ const Navbar = () => {
             <Link
               key={link.name}
               href={link.href}
-              className="text-[13px] font-semibold tracking-wide uppercase"
+              className="group relative text-[13px] font-semibold tracking-wide uppercase py-1"
             >
-              {link.name}
+              <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">
+                {link.name}
+              </span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 ease-out group-hover:w-full" />
             </Link>
           ))}
         </div>
